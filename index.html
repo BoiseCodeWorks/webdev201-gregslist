@@ -16,7 +16,8 @@
 
   <body>
     <button onclick="app.carsController.getCars()">Cars</button>
-    <form onsubmit="app.carsController.createCar()">
+    <form id="car-form" onsubmit="app.carsController.createCar()">
+      <input name="_id" type="text" class="d-none" disabled />
       <div class="form-group">
         <label for="Make">Make:</label>
         <input name="Make" type="text" class="form-control" />
